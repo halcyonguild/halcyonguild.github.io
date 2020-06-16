@@ -304,3 +304,19 @@ footer {
     color:#444;
   }
 }
+
+.rank.legendary {
+	color: #FF8000;
+}
+
+.rank.epic {
+	color: #A335EE;
+}
+
+.rank.rare {
+	color: #0070DD;
+}
+
+.rank.uncommon {
+	color: #1EFF00;
+}
