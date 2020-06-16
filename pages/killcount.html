@@ -36,7 +36,7 @@
 
         <a href="/halcyonguild.github.io/">&larr; Go back</a>
         <p> </p>
-        <table class="kill-table">
+        <table class="kill-count-table">
         <caption>sorted in the order that we killed the bosses, stats taken from ExRT (*1-shot = 0)</caption>
                 <tbody>
                     <tr>
@@ -848,53 +848,8 @@
             <h5>(*) Previous 9-hour/week schedule.</h5>
         </section>
         </div>
-    <script src="../javascripts/scale.fix.js"></script>
     </body>
-	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script>
-		$().ready(() => {
-			$('.kill-table tr').each((i, element) => {
-				const boss = $(element).find('td:first-child');
-				const rank = parseInt(boss.html());
-				if (!isNaN(rank)) {
-					boss.addClass('rank ' + getRankClass(rank));
-				}
-			});
-			
-			function getRankClass(rank) {
-				if (rank <= 10) {
-					return 'legendary';
-				}
-				if (rank <= 100) {
-					return 'epic';
-				}
-				if (rank <= 250) {
-					return 'rare';
-				}
-				return 'uncommon';
-			}
-		});
-	</script>
-	<style>
-		.rank.legendary {
-			color: #FF8000;
-		}
-		
-		.rank.epic {
-			color: #A335EE;
-		}
-		
-		.rank.rare {
-			color: #0070DD;
-		}
-		
-		.rank.uncommon {
-			color: #1EFF00;
-		}
-		
-		.kill-table a {
-			color: #62b5d0;
-		}
-	</style>
+	<script src="../javascripts/scale.fix.js"></script>
+	<script src="../javascripts/kill-count.js"></script>
 </html>
