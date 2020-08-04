@@ -96,18 +96,24 @@ h2 {
     margin: 0;
 }
 
+.main-header:hover {
+    cursor: pointer;
+}
+
 .wowprogress-bg {
     width: 40px;
     height: 40px;
     background-color: var(--background-black);
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 50%;
     text-align: center;
+    transition: 0.2s;
 }
 
 .wowprogress-bg:hover {
     opacity: 1;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .wowprogress {
@@ -205,11 +211,13 @@ img {
 img.icon {
     width: 40px;
     height: 40px;
-    opacity: 0.7;
+    opacity: 0.5;
+    transition: 0.2s
 }
 
 img.icon:hover {
     opacity: 1.0;
+    transform: scale(1.2);
 }
 
 header {
@@ -225,10 +233,12 @@ header {
     border-radius: 2px;
     border: none;
     width: 100%;
+    transition: 0.5s;
 }
 
 .button:hover {
     cursor: pointer;
+    background: linear-gradient(325deg, #016480 0, #02B4E5, #02F2E6 100%);
 }
 
 .button .apply {
