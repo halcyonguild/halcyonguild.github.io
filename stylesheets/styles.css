@@ -1,19 +1,56 @@
+/* CSS Variables */
+:root {
+  --primary-color: #02789A; /* TODO: findout the real colors */
+  --secondary-color: #02F2E6;
+  --default-margin: 16px 32px;
+  --text-color: white;
+  --background-primary: #212121;
+  --background-secondary: #181818;
+  --background-black: #000;
+}
+
+/* Common asset classes */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.reset-gutter {
+  padding: 0;
+  margin: 0;
+}
+/* -------------------- */
+
 body {
-  background-color:#323232;
-  padding:50px;
+  background-color:var(--background-primary);
   font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:#CCCCCC;
+  color:var(--text-color);
   font-weight:400;
+  height: 100%;
+  align-items: stretch;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#CCCCCC;
+  color:var(--text-color);
   margin:0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+.navigation {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background-color: var(--background-secondary);
+  padding: 24px;
 }
+
+/*p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}*/
 
 h1, h2, h3 {
   line-height:1.1;
@@ -25,7 +62,7 @@ h1 {
 }
 
 h2 {
-  color:#CCCCCC;
+  color:var(--text-color);
   font-weight: 500;
 }
 
@@ -35,7 +72,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:white;
   text-decoration:none;
 }
 
@@ -64,6 +101,10 @@ blockquote {
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
+}
+
+.main-content {
+  margin: 32px 0;
 }
 
 code, pre {
@@ -101,7 +142,7 @@ dt {
 }
 
 th {
-  color:#CCCCCC;
+  color:var(--text-color);
 }
 
 img {
@@ -120,29 +161,27 @@ img.icon:hover {
 
 header {
   width:220px;
-  float:left;
-  position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-header ul.button {
+.button {
   list-style:none;
   height:40px;
   padding:0;
-  background: #757575;
+  background: linear-gradient(to right,#02789A, #02B4E5, #02F2E6);
   border-radius:5px;
-  border:1px solid #909090;
+  border: none;
   width:100%;
 }
 
-header ul.button li {
+ul.button li {
   width:100%;
   float:center;
   border-right:1px solid #0000;
   height:40px;
 }
 
-header ul.icons {
+ul.icons {
   list-style:none;
   height:22px;
   padding:0;
@@ -150,13 +189,13 @@ header ul.icons {
   width:60%;
 }
 
-header ul.icons li {
+ul.icons li {
   width:33%;
   float:left;
   height:100%;
 }
 
-header ul.button a {
+ul.button a {
   line-height:1;
   font-size:11px;
   color:#c0c0c0;
@@ -166,35 +205,35 @@ header ul.button a {
   height:34px;
 }
 
-header ul.button a:hover {
+ul.button a:hover {
   color:rgba(18, 218, 201, 0.6);
 }
 
-header ul.button a:active {
+ul.button a:active {
   background-color:#f0f0f0;
 }
 
-header ul.legend {
+ul.legend {
   list-style:none;
   height:22px;
   padding: 0;
 }
 
-header ul.legend li {
+ul.legend li {
   padding-bottom: 1em;
 }
 
-header p.space {
+p.space {
   padding-top: 10px;
 }
 
 
 strong {
-  color:#CCCCCC;
+  color:var(--text-color);
   font-weight:600;
 }
 
-header ul li + li + li {
+ul li + li + li {
   border-right:none;
   width:89px;
 }
@@ -202,7 +241,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#CCCCCC;
+  color:var(--text-color);
 }
 
 section {

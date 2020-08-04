@@ -10,29 +10,37 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width">
   </head>
-  <body>
-    <div class="wrapper">
+
+  <body class="flex-row reset-gutter">
+
+    <div class="flex-col navigation">
         <header>
             <h1>Halcyon</h1>
-            <ul class="icons">
+        </header>
+
+        <nav>
+            <ul class="flex-row icons">
+                <!-- TODO: replace icons with proper ones-->
                     <li><a href=https://www.wowprogress.com/guild/eu/dentarg/Halcyon><img class="icon" src="media/icons/wowpro.png" alt="wowprogress"></a></li>
                     <li><a href=https://raider.io/guilds/eu/dentarg/Halcyon><img class="icon" src="media/icons/raiderio.png" alt="raiderio"></a></li>
                     <li><a href=https://www.warcraftlogs.com/guild/calendar/3216><img class="icon" src="media/icons/warcraftlogs.png" alt="warcraftlogs"></li>
             </ul>
             <p class="view"><a href="https://github.com/halcyonguild">View the Project on GitHub <small>github/halcyonguild</small></a></p>
-            <ul class="button">
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdnffWvIpcz3yGt_qRCZsMg3eq2voT0luBhsUXOrVzOfz7k7A/viewform?usp=sf_link">Click to <strong>Apply</strong></a></li>
-            </ul>
+            <button class="button">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnffWvIpcz3yGt_qRCZsMg3eq2voT0luBhsUXOrVzOfz7k7A/viewform?usp=sf_link"><strong>APPLY</strong></a>
+            </button>
             <p class="space"></p>
             <ul class="legend">
-                    <li><a href="/halcyonguild.github.io/">Home/</a></li>
-                    <li><a href="/pages/killcount.html">Kill List/</a></li>
-                    <li><a href="https://worldofwarcraft.com/en-gb/guild/eu/dentarg/halcyon">Players/</a></li>
+                    <li><a href="/halcyonguild.github.io/">Home</a></li>
+                    <li><a href="/pages/killcount.html">Kill List</a></li>
+                    <li><a href="https://worldofwarcraft.com/en-gb/guild/eu/dentarg/halcyon">Players</a></li>
                     <!--<li><a href="/halcyonguild.github.io/pages/videos.html">Videos/</a></li>-->
-                    <li><a href="https://wago.io/p/moet">WeakAuras/</a></li>
+                    <li><a href="https://wago.io/p/moet">WeakAuras</a></li>
             </ul>
-        </header>
-        <section>
+        </nav>
+    </div>
+
+        <section class="main-content">
             <p>Halcyon was formed early 2013 so that a group of friends could game together.</p>
             <p>Our goal has always remained the same; efficient raiding <b>without</b> enforcing alts, PTR tests, split runs or a treadmill grind inbetween tiers. Alts are welcomed, but not enforced. Above all is maintaining a chill and enjoyable raid environment.</p>
 
@@ -272,7 +280,6 @@
             <h5>(*) Previous 9-hour/week schedule.</h5>
 
         </section>
-    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="javascripts/scale.fix.js"></script>
