@@ -31,6 +31,10 @@
     src: url('../assets/fonts/Gotham-Font/GothamMedium.ttf');
 }
 
+.testivari {
+    color: aquamarine !important;
+}
+
 
 /* Common asset classes */
 
@@ -381,18 +385,18 @@ screen and (max-width: 480px) {
     }
 }
 
-.rank.legendary {
+.rank-legendary {
     color: #FF8000;
 }
 
-.rank.epic {
+.rank-epic {
     color: #A335EE;
 }
 
-.rank.rare {
+.rank-rare {
     color: #0070DD;
 }
 
-.rank.uncommon {
+.rank-uncommon {
     color: #1EFF00;
 }
