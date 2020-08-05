@@ -6,14 +6,14 @@
 /* CSS Variables */
 
 :root {
-    --primary-color: #02789A;
+    --primary-color: #02B4E5;
     --secondary-color: #02F2E6;
     --default-margin: 16px 32px;
     --text-color: white;
     --secondary-text-color: #777;
-    --background-primary: rgb(33, 33, 33);
+    --background-primary: rgb(18, 18, 18);
     --background-secondary: rgb(24, 24, 24);
-    --background-black: #000;
+    --background-dark: rgb(33, 33, 33);
 }
 
 @font-face {
@@ -29,10 +29,6 @@
 @font-face {
     font-family: 'Halcyon-apply';
     src: url('../assets/fonts/Gotham-Font/GothamMedium.ttf');
-}
-
-.testivari {
-    color: aquamarine !important;
 }
 
 
@@ -53,16 +49,20 @@
     margin: 0;
 }
 
-
-/* -------------------- */
+.emphasize {
+    color: var(--primary-color);
+}
 
 body {
+    margin: 0 auto !important;
+    width: 1200px;
     background-color: var(--background-primary);
     color: var(--text-color);
-    font-weight: 400;
-    height: 100%;
-    align-items: stretch;
     font-family: 'Halcyon';
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1,
@@ -81,18 +81,27 @@ h3 {
     line-height: 1.1;
 }
 
-h2 {
-    color: var(--text-color);
-    font-weight: 500;
+a {
+    color: white;
+    text-decoration: none;
 }
+
+a:hover {
+    color: var(--primary-color);
+}
+
+
+/* NAVIGATION */
 
 .navigation {
     background-color: var(--background-secondary);
     padding: 24px;
+    height: 100vh;
 }
 
 .main-header {
     font-family: 'Halcyon-header';
+    width: 250px;
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 5px;
@@ -127,15 +136,6 @@ h2 {
     color: white;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #02B4E5;
-}
-
 a small {
     font-size: 11px;
     color: #777;
@@ -145,16 +145,19 @@ a small {
 
 .github-link {
     position: fixed;
-    bottom: 16px;
+    bottom: 24px;
 }
 
 .open-new-icon {
     margin-left: 5px;
 }
 
-.wrapper {
-    width: 860px;
-    margin: 0 auto;
+
+/* MAIN-CONTENT */
+
+.main-content {
+    padding: var(--default-margin);
+    background-color: var(--background-dark);
 }
 
 blockquote {
@@ -162,10 +165,6 @@ blockquote {
     margin: 0;
     padding: 0 0 0 20px;
     font-style: italic;
-}
-
-.main-content {
-    margin: 32px 0;
 }
 
 code,
@@ -224,16 +223,11 @@ img.icon:hover {
     transform: scale(1.2);
 }
 
-header {
-    width: 220px;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-
 .button {
     list-style: none;
     height: 45px;
     padding: 0;
-    background: linear-gradient(145deg, #016480 0, #02B4E5, #02F2E6 100%);
+    background: linear-gradient(145deg, #016480 0, var(--primary-color), #02F2E6 100%);
     border-radius: 2px;
     border: none;
     width: 100%;
@@ -242,7 +236,7 @@ header {
 
 .button:hover {
     cursor: pointer;
-    background: linear-gradient(325deg, #016480 0, #02B4E5, #02F2E6 100%);
+    background: linear-gradient(325deg, #016480 0, var(--primary-color), #02F2E6 100%);
 }
 
 .button .apply {
@@ -286,12 +280,6 @@ header ul a strong {
     font-size: 14px;
     display: block;
     color: var(--text-color);
-}
-
-section {
-    width: 550px;
-    float: right;
-    padding-bottom: 50px;
 }
 
 small {

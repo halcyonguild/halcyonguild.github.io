@@ -1,15 +1,19 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() { // on document load
     /* Array of world-ranks */
-    let worldRanks = document.getElementById('kill-count-table').getElementsByClassName('world-rank');
+    const worldRanks = document.getElementById('kill-count-table').getElementsByClassName('world-rank');
 
-    /* Loop through ranks & add a class depending on value */
+    /* Loop through all ranks */
     for (let i = 0; i < worldRanks.length; i++) {
         const rank = worldRanks[i].innerHTML; //the actual world-rank value
         worldRanks[i].classList.add('rank-' + determineClassColor(rank));
     }
 
+    /**
+     * determines a class for rank
+     * @param rank number
+     */
     function determineClassColor(rank) {
         if (rank <= 10) {
             return 'legendary';
