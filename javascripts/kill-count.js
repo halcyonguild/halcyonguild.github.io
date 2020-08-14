@@ -26,4 +26,17 @@ document.addEventListener("DOMContentLoaded", function() { // on document load
         }
         return 'uncommon';
     }
+
+
+
+
 });
+
+
+function openTier(element) {
+    element.parentNode.parentNode.classList.add('open');
+}
+
+function closeTier(element) {
+    element.parentNode.parentNode.classList.remove('open');
+}

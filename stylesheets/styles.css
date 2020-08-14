@@ -91,12 +91,22 @@ a:hover {
 }
 
 
+/* make scrollbar transparent */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
 /* NAVIGATION */
 
 .navigation {
     background-color: var(--background-secondary);
     padding: 24px;
     height: 100vh;
+    width: 300px;
+    position: fixed;
 }
 
 .main-header {
@@ -158,6 +168,9 @@ a small {
 .main-content {
     padding: var(--default-margin);
     background-color: var(--background-dark);
+    width: 100%;
+    margin-left: 300px;
+    min-height: 100vh;
 }
 
 blockquote {
@@ -165,6 +178,25 @@ blockquote {
     margin: 0;
     padding: 0 0 0 20px;
     font-style: italic;
+}
+
+.video-header {
+    width: 100%;
+    height: 55px;
+    background-color: var(--background-secondary);
+}
+
+.video-header h2 {
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.video-container {
+    border: 10px solid var(--background-secondary);
+    border-top: 0;
 }
 
 code,
