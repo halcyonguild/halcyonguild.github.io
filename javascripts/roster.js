@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    /* EMBLEMS */
+
     /* Shamans */
     const shamans = document.getElementsByClassName('shaman');
     for (let i = 0; i < shamans.length; i++) {
@@ -71,4 +73,99 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < dhs.length; i++) {
         dhs[i].src = "../assets/media/class-emblems/demonhunter_emblem.png";
     }
+
+    /* NATINALITIES */
+
+    /* Denmark */
+    const danish = document.getElementsByClassName('denmark');
+    for (let i = 0; i < danish.length; i++) {
+        danish[i].src = "../assets/media/Flags/denmark-flag-button-square-icon-32.png";
+    }
+
+    /* Sweden */
+    const swedish = document.getElementsByClassName('sweden');
+    for (let i = 0; i < swedish.length; i++) {
+        swedish[i].src = "../assets/media/Flags/sweden-flag-button-square-icon-32.png";
+    }
+
+    /* Norway */
+    const norwegian = document.getElementsByClassName('norway');
+    for (let i = 0; i < norwegian.length; i++) {
+        norwegian[i].src = "../assets/media/Flags/norway-flag-button-square-icon-32.png";
+    }
+
+    /* Finland */
+    const finnish = document.getElementsByClassName('finland');
+    for (let i = 0; i < finnish.length; i++) {
+        finnish[i].src = "../assets/media/Flags/finland-flag-button-square-icon-32.png";
+    }
+
+    /* Poland */
+    const polish = document.getElementsByClassName('poland');
+    for (let i = 0; i < polish.length; i++) {
+        polish[i].src = "../assets/media/Flags/poland-flag-button-square-icon-32.png";
+    }
+
+    /* Ukraine */
+    const ukrainian = document.getElementsByClassName('ukraine');
+    for (let i = 0; i < ukrainian.length; i++) {
+        ukrainian[i].src = "../assets/media/Flags/ukraine-flag-button-square-icon-32.png";
+    }
+
+    /* No teeth */
+    const british = document.getElementsByClassName('uk');
+    for (let i = 0; i < british.length; i++) {
+        british[i].src = "../assets/media/Flags/united-kingdom-flag-button-square-icon-32.png";
+    }
+
+    /* Yermany */
+    const german = document.getElementsByClassName('germany');
+    for (let i = 0; i < german.length; i++) {
+        german[i].src = "../assets/media/Flags/germany-flag-button-square-icon-32.png";
+    }
+
+    /* Netherlands */
+    const dutch = document.getElementsByClassName('netherlands');
+    for (let i = 0; i < dutch.length; i++) {
+        dutch[i].src = "../assets/media/Flags/netherlands-flag-button-square-icon-32.png";
+    }
+
+    /* Luxembourg */
+    const luxembourgish = document.getElementsByClassName('luxembourg');
+    for (let i = 0; i < luxembourgish.length; i++) {
+        luxembourgish[i].src = "../assets/media/Flags/luxembourg-flag-button-square-icon-32.png";
+    }
+
+    /* Iran */
+    const iranian = document.getElementsByClassName('iran');
+    for (let i = 0; i < iranian.length; i++) {
+        iranian[i].src = "../assets/media/Flags/iran-flag-button-square-icon-32.png";
+    }
+
+    /* Bulgaria */
+    const bulgarian = document.getElementsByClassName('bulgaria');
+    for (let i = 0; i < bulgarian.length; i++) {
+        bulgarian[i].src = "../assets/media/Flags/bulgaria-flag-button-square-icon-32.png";
+    }
+
+
+    /* Iceland */
+    const icelandic = document.getElementsByClassName('iceland');
+    for (let i = 0; i < icelandic.length; i++) {
+        icelandic[i].src = "../assets/media/Flags/iceland-flag-button-square-icon-32.png";
+    }
+
+    /* Hungary */
+    const hungarian = document.getElementsByClassName('hungary');
+    for (let i = 0; i < hungarian.length; i++) {
+        hungarian[i].src = "../assets/media/Flags/hungary-flag-button-square-icon-32.png";
+    }
+
+    /* N Korea */
+    const nkorean = document.getElementsByClassName('nkorea');
+    for (let i = 0; i < nkorean.length; i++) {
+        nkorean[i].src = "../assets/media/Flags/north-korea-flag-button-square-icon-32.png";
+    }
+
+
 });

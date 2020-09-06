@@ -32,7 +32,7 @@ p {
     overflow: hidden;
 }
 
-.player-card img {
+.player-card img.class {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -116,4 +116,26 @@ p {
 
 .dps-row .player-card:last-child {
     margin-bottom: 0;
+}
+
+.denmark,
+.sweden,
+.norway,
+.finland,
+.uk,
+.poland,
+.ukraine,
+.germany,
+.netherlands,
+.iran,
+.luxembourg,
+.iceland,
+.bulgaria,
+.hungary,
+.nkorea {
+    position: absolute;
+    z-index: 22;
+    top: -2px;
+    right: -2px;
+    opacity: 0.5;
 }
