@@ -1,7 +1,6 @@
 function openNav() {
     document.getElementById("navigation").style.width = "75vw";
     document.getElementById("navigation").style.padding = "15px 24px 24px 24px";
-
 }
 
 function closeNav() {

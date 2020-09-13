@@ -343,8 +343,7 @@ footer {
     display: none !important;
 }
 
-@media print,
-screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     body {
         width: 100vw;
     }
@@ -354,6 +353,7 @@ screen and (max-width: 960px) {
         box-sizing: border-box;
         overflow-x: hidden;
         border-right: rgba(255, 255, 255, 0.6) 1px solid;
+        z-index: 99;
     }
     .main-content {
         margin-left: 0;
@@ -377,6 +377,7 @@ screen and (max-width: 960px) {
         padding: 15px;
         background-color: var(--background-secondary);
         position: sticky;
+        z-index: 99;
         top: 0;
         align-self: flex-start;
     }
