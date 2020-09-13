@@ -6,20 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Halcyon</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/roster.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width">
 
     <script type="text/javascript" src="../javascripts/roster.js"></script>
+    <script type="text/javascript" src="../javascripts/navigation.js"></script>
 </head>
 
 <body class="flex-row reset-gutter">
-    <nav class="flex-col navigation">
+
+    <nav class="mobile-menu flex-row display-mobile">
+        <i class="material-icons md-36 mobile-menu-icon" onclick="openNav()">menu</i>
+        <h1 class="main-header nav-header"><a href="/">HALCYON</a></h1>
+    </nav>
+
+    <nav class="flex-col navigation" id="navigation">
         <header>
-            <h1 class="main-header"><a href="/">HALCYON</a></h1>
+            <h1 class="main-header nav-header display-desktop"><a href="/">HALCYON</a></h1>
+            <i class="material-icons md-36 mobile-menu-icon close-icon display-mobile" onclick="closeNav()">close</i>
         </header>
 
         <ul class="flex-row icons">
@@ -50,7 +58,7 @@
             <li><a href="https://wago.io/p/moet" class="flex-row"><span>WEAKAURAS</span><i class="material-icons md-18">navigate_next</i></a></li>
         </ul>
 
-        <a class="github-link" href="https://github.com/halcyonguild"><span class="flex-row">View on GitHub<i class="material-icons md-18 open-new-icon">open_in_new</i></span> <small>github/halcyonguild</small></a>
+        <a class="github-link display-desktop" href="https://github.com/halcyonguild"><span class="flex-row">View on GitHub<i class="material-icons md-18 open-new-icon">open_in_new</i></span> <small>github/halcyonguild</small></a>
     </nav>
 
     <section class="main-content">
@@ -108,7 +116,8 @@
 
         </div>
 
-        <h2 class="roster-header">HALCYON ROTATION BOTS:</h2>
+        <h2 class="roster-header display-desktop">HALCYON ROTATION BOTS:</h2>
+        <h2 class="roster-header display-mobile">DPS:</h2>
         <div class="flex-row roster-row dps-row">
 
             <div class="player-card">

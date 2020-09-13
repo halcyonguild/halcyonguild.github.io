@@ -139,3 +139,12 @@ p {
     right: -2px;
     opacity: 0.5;
 }
+
+@media screen and (max-width: 960px) {
+    .main-content .flex-row {
+        flex-direction: column;
+    }
+    .player-card {
+        width: 100%;
+    }
+}
