@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Halcyon</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="../javascripts/kill-count.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/kill-count.js"></script>
+    <script src="javascripts/navigation.js"></script>
     <meta name="viewport" content="width=device-width">
 
 </head>
 
 <body class="flex-row reset-gutter">
-    <nav class="flex-col navigation">
+    <nav class="mobile-menu flex-row display-mobile">
+        <i class="material-icons md-36 mobile-menu-icon" onclick="openNav()">menu</i>
+        <h1 class="main-header nav-header"><a href="/">HALCYON</a></h1>
+    </nav>
+
+    <nav class="flex-col navigation" id="navigation">
         <header>
-            <h1 class="main-header nav-header"><a href="/">HALCYON</a></h1>
+            <h1 class="main-header nav-header display-desktop"><a href="/">HALCYON</a></h1>
+            <i class="material-icons md-36 mobile-menu-icon close-icon display-mobile" onclick="closeNav()">close</i>
         </header>
 
         <ul class="flex-row icons">
@@ -50,7 +59,7 @@
                         class="material-icons md-18">navigate_next</i></a></li>
         </ul>
 
-        <a class="github-link" href="https://github.com/halcyonguild"><span class="flex-row">View on GitHub<i
+        <a class="github-link display-desktop" href="https://github.com/halcyonguild"><span class="flex-row">View on GitHub<i
                     class="material-icons md-18 open-new-icon">open_in_new</i></span>
             <small>github/halcyonguild</small></a>
     </nav>
@@ -76,7 +85,9 @@
 
         <div class="table-content">
             <div class="table-header">
-                <h2 class="main-header">Excerpt of what we have accomplished together</h2>
+                <h2 class="main-header display-desktop">Excerpt of what we have accomplished together</h2>
+                <h2 class="main-header display-mobile">Excerpt of accomplishments</h2>
+
             </div>
 
             <table class="kill-count-table" id="kill-count-table">
@@ -318,7 +329,6 @@
         </div>
 
     </section>
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/kill-count.js"></script>
+
 
 </html>
