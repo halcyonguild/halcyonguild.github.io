@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() { // on document load
     /* Loop through all ranks */
     for (let i = 0; i < worldRanks.length; i++) {
         const rank = worldRanks[i].innerHTML; //the actual world-rank value
-        worldRanks[i].classList.add('rank-' + determineClassColor(rank));
+        worldRanks[i].classList.add('rank-' + determineClassColor(rank)); //add class
     }
 
     /**
@@ -24,12 +24,11 @@ document.addEventListener("DOMContentLoaded", function() { // on document load
         if (rank <= 250) {
             return 'rare';
         }
+        if (rank == '-') {
+            return 'default'
+        }
         return 'uncommon';
     }
-
-
-
-
 });
 
 

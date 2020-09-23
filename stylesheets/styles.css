@@ -411,3 +411,7 @@ footer {
 .rank-uncommon {
     color: #1EFF00;
 }
+
+.rank-default {
+    color: var(--secondary-text-color);
+}
