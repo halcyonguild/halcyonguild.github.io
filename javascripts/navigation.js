@@ -1,9 +1,7 @@
 function openNav() {
-    document.getElementById("navigation").style.width = "75vw";
-    document.getElementById("navigation").style.padding = "15px 24px 24px 24px";
+    document.getElementById("navigation").style.left = "0";
 }
 
 function closeNav() {
-    document.getElementById("navigation").style.width = "0";
-    setTimeout(function() { document.getElementById("navigation").style.padding = "15px 0 24px 0"; }, 50);
+    document.getElementById("navigation").style.left = "-75vw";
 }
