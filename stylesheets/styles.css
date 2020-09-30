@@ -399,6 +399,34 @@
         }
     }
     
+    @media screen and (min-width: 3000px) {
+        body {
+            width: 1800px;
+        }
+        .navigation {
+            width: 500px;
+        }
+        .main-content {
+            margin-left: 500px;
+        }
+        .button {
+            height: 60px;
+        }
+        p,
+        span,
+        a,
+        .button .apply,
+        strong {
+            font-size: 24px;
+        }
+        h2.roster-header {
+            font-size: 46px;
+        }
+        h1.main-header a {
+            font-size: 3.5vh;
+        }
+    }
+    
     .rank-legendary {
         color: #FF8000;
     }

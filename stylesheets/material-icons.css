@@ -37,3 +37,15 @@
 .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3);
 }
+
+@media screen and (min-width: 3000px) {
+    .material-icons.md-36 {
+        font-size: 3vh;
+    }
+    .material-icons.md-24 {
+        font-size: 2vh;
+    }
+    .material-icons.md-18 {
+        font-size: 1.2vh;
+    }
+}

@@ -23,8 +23,7 @@ p {
 
 .raid-tier {
     background-color: var(--background-secondary);
-    height: 160px;
-    width: 250px;
+    width: 30%;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
     transition: 0.2s;
@@ -43,11 +42,10 @@ p {
 
 .world-rank {
     text-align: center;
-    font-size: 34px;
+    font-size: 3.5vh;
 }
 
 .tier-content {
-    height: 65px;
     align-content: center;
     position: relative;
 }
@@ -60,13 +58,14 @@ p {
     position: absolute;
     right: 15px;
     transform: translateY(-50%);
-    top: 55%;
+    top: 65%;
     opacity: 0.8;
     cursor: pointer;
 }
 
-.close-tier {
+.material-icons.close-tier {
     opacity: 0;
+    display: none;
 }
 
 .open .tier-content {
@@ -77,7 +76,6 @@ p {
     height: auto;
     transition: 0.2s;
     box-shadow: -5px -5px 12px 5px var(--primary-color), 5px 5px 12px 5px var(--secondary-color);
-    overflow: hidden;
 }
 
 .open .open-tier {
@@ -85,13 +83,13 @@ p {
 }
 
 .open .close-tier {
-    opacity: 1;
     position: absolute;
-    top: 32.5px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    opacity: 0.8;
     right: 15px;
+    transform: translateY(-50%);
+    top: 65%;
+    opacity: 0.8;
+    display: inline-block;
+    cursor: pointer;
 }
 
 #boss-container {
@@ -100,8 +98,44 @@ p {
 
 .open #boss-container {
     display: block;
+    position: relative;
     text-align: center;
     padding: 10px 15px;
+}
+
+#boss-container p:not(.subtitle):first-child {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.video-link {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 99;
+}
+
+.video-link .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--background-dark);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.video-link:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.8;
 }
 
 .bottom-row {
@@ -114,10 +148,4 @@ p {
 
 .tier-bosses>#boss-container:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media screen and (max-width: 960px) {
-    .tier-row {
-        justify-content: space-around;
-    }
 }
