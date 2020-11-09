@@ -308,7 +308,7 @@
     
     @media screen and (max-width: 960px) {
         body {
-            width: 100vw;
+            width: 100%;
         }
         .navigation {
             width: 75vw;

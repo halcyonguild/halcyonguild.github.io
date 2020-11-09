@@ -24,7 +24,6 @@ p {
 .raid-tier {
     display: flex;
     flex-direction: column;
-    padding: 2px 5px 5px 5px;
     background-color: var(--background-secondary);
     width: 30%;
     border-radius: 5px;
@@ -60,7 +59,7 @@ p {
 .open-tier {
     position: absolute;
     right: 15px;
-    bottom: 0px;
+    bottom: 2px;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -87,7 +86,7 @@ p {
 .open .close-tier {
     position: absolute;
     right: 15px;
-    bottom: 0px;
+    bottom: 2px;
     opacity: 0.8;
     display: inline-block;
     cursor: pointer;
@@ -113,7 +112,7 @@ p {
     position: absolute;
     top: 5px;
     right: 5px;
-    z-index: 99;
+    z-index: 1;
 }
 
 .video-link .tooltiptext {
@@ -154,6 +153,7 @@ p {
 @media screen and (max-width: 960px) {
     .raid-tier {
         width: 100%;
+        margin: 16px 15px;
     }
     .raid-tier .world-rank {
         font-size: 32px;
