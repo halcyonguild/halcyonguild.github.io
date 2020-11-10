@@ -50,6 +50,7 @@ p {
 .tier-content {
     align-content: center;
     position: relative;
+    padding: 5px;
 }
 
 .tier-table {
@@ -159,9 +160,15 @@ p {
         font-size: 32px;
     }
     .raid-tier .tier-content {
-        padding: 5px 5px 10px 5px;
+        padding-bottom: 10px;
     }
     .raid-tier .tier-name {
         font-size: 20px;
+    }
+    .raid-tier .open-tier {
+        bottom: 5px;
+    }
+    .raid-tier .close-tier {
+        bottom: 5px;
     }
 }
