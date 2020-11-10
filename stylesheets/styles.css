@@ -15,7 +15,7 @@
     
     @font-face {
         font-family: 'Halcyon';
-        src: url('../assets/fonts/Gotham-Font/GothamBook.ttf');
+        src: url('../assets/fonts/Gotham-Font/HomepageBaukasten-Book.woff');
     }
     
     @font-face {
@@ -53,7 +53,7 @@
         width: 1300px;
         background-color: var(--background-primary);
         color: var(--text-color);
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Halcyon';
     }
     
     * {
