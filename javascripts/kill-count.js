@@ -29,13 +29,17 @@ document.addEventListener("DOMContentLoaded", function() { // on document load
         }
         return 'uncommon';
     }
+
 });
 
+let isOpen = false;
 
-function openTier(element) {
-    element.parentNode.parentNode.classList.add('open');
-}
-
-function closeTier(element) {
-    element.parentNode.parentNode.classList.remove('open');
+function toggleTier(element) {
+    if (!isOpen) {
+        element.classList.add('open');
+        isOpen = !isOpen;
+    } else if (isOpen) {
+        element.classList.remove('open');
+        isOpen = !isOpen;
+    }
 }

@@ -29,7 +29,8 @@ p {
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
     transition: 0.2s;
-    margin: 0 16px 16px 0
+    margin: 0 16px 16px 0;
+    cursor: pointer;
 }
 
 .raid-tier img {
@@ -50,6 +51,7 @@ p {
 .tier-content {
     align-content: center;
     position: relative;
+    padding: 5px;
 }
 
 .tier-table {
@@ -60,7 +62,7 @@ p {
     position: absolute;
     right: 15px;
     bottom: 2px;
-    opacity: 0.8;
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -87,7 +89,7 @@ p {
     position: absolute;
     right: 15px;
     bottom: 2px;
-    opacity: 0.8;
+    opacity: 0.5;
     display: inline-block;
     cursor: pointer;
 }
@@ -159,9 +161,15 @@ p {
         font-size: 32px;
     }
     .raid-tier .tier-content {
-        padding: 5px 5px 10px 5px;
+        padding-bottom: 10px;
     }
     .raid-tier .tier-name {
         font-size: 20px;
+    }
+    .raid-tier .open-tier {
+        bottom: 5px;
+    }
+    .raid-tier .close-tier {
+        bottom: 5px;
     }
 }
