@@ -44,8 +44,14 @@
         margin: 0;
     }
     
-    .emphasize {
-        color: var(--primary-color);
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .emphasize,
+    .emphasize a {
+        color: var(--primary-color) !important;
     }
     
     body {
@@ -74,11 +80,6 @@
     h2,
     h3 {
         line-height: 1.1;
-    }
-    
-    a {
-        color: white;
-        text-decoration: none;
     }
     
     a:hover {
