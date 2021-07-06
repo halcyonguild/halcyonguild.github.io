@@ -128,7 +128,8 @@ p {
 .iceland,
 .bulgaria,
 .hungary,
-.nkorea {
+.nkorea,
+.austria {
     position: absolute;
     z-index: 22;
     top: -2px;

@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     /* EMBLEMS */
 
@@ -167,6 +167,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const nkorean = document.getElementsByClassName('nkorea');
     for (let i = 0; i < nkorean.length; i++) {
         nkorean[i].src = "../assets/media/Flags/north-korea-flag-button-square-icon-32.png";
+    }
+
+    /* Austria */
+    const austria = document.getElementsByClassName('austria');
+    for (let i = 0; i < austria.length; i++) {
+        austria[i].src = "../assets/media/Flags/austria-flag-button-square-icon-32.png";
     }
 
 
